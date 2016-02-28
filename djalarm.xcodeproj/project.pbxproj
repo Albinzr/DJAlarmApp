@@ -14,6 +14,7 @@
 		BDD92A161C82CDED00D9A49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD92A141C82CDED00D9A49A /* LaunchScreen.storyboard */; };
 		BDD92A211C82CDED00D9A49A /* djalarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A201C82CDED00D9A49A /* djalarmTests.swift */; };
 		BDD92A2C1C82CF5E00D9A49A /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A2B1C82CF5E00D9A49A /* Material.framework */; };
+		BDD92A2F1C82CF9E00D9A49A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A2E1C82CF9E00D9A49A /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		BDD92A201C82CDED00D9A49A /* djalarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = djalarmTests.swift; sourceTree = "<group>"; };
 		BDD92A221C82CDED00D9A49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD92A2B1C82CF5E00D9A49A /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
+		BDD92A2E1C82CF9E00D9A49A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD92A2F1C82CF9E00D9A49A /* MediaPlayer.framework in Frameworks */,
 				BDD92A2C1C82CF5E00D9A49A /* Material.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		BDD929FF1C82CDED00D9A49A = {
 			isa = PBXGroup;
 			children = (
+				BDD92A2E1C82CF9E00D9A49A /* MediaPlayer.framework */,
 				BDD92A2B1C82CF5E00D9A49A /* Material.framework */,
 				BDD92A0A1C82CDED00D9A49A /* djalarm */,
 				BDD92A1F1C82CDED00D9A49A /* djalarmTests */,
