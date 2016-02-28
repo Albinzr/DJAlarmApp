@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDD92A0C1C82CDED00D9A49A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A0B1C82CDED00D9A49A /* AppDelegate.swift */; };
+		BDD92A0E1C82CDED00D9A49A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A0D1C82CDED00D9A49A /* ViewController.swift */; };
+		BDD92A111C82CDED00D9A49A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD92A0F1C82CDED00D9A49A /* Main.storyboard */; };
+		BDD92A131C82CDED00D9A49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD92A121C82CDED00D9A49A /* Assets.xcassets */; };
+		BDD92A161C82CDED00D9A49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD92A141C82CDED00D9A49A /* LaunchScreen.storyboard */; };
+		BDD92A211C82CDED00D9A49A /* djalarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A201C82CDED00D9A49A /* djalarmTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDD92A1D1C82CDED00D9A49A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD92A001C82CDED00D9A49A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD92A071C82CDED00D9A49A;
+			remoteInfo = djalarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDD92A081C82CDED00D9A49A /* djalarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = djalarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD92A0B1C82CDED00D9A49A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDD92A0D1C82CDED00D9A49A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDD92A101C82CDED00D9A49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDD92A121C82CDED00D9A49A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDD92A151C82CDED00D9A49A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDD92A171C82CDED00D9A49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD92A1C1C82CDED00D9A49A /* djalarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = djalarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD92A201C82CDED00D9A49A /* djalarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = djalarmTests.swift; sourceTree = "<group>"; };
+		BDD92A221C82CDED00D9A49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD92A051C82CDED00D9A49A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD92A191C82CDED00D9A49A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDD929FF1C82CDED00D9A49A = {
+			isa = PBXGroup;
+			children = (
+				BDD92A0A1C82CDED00D9A49A /* djalarm */,
+				BDD92A1F1C82CDED00D9A49A /* djalarmTests */,
+				BDD92A091C82CDED00D9A49A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD92A091C82CDED00D9A49A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD92A081C82CDED00D9A49A /* djalarm.app */,
+				BDD92A1C1C82CDED00D9A49A /* djalarmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD92A0A1C82CDED00D9A49A /* djalarm */ = {
+			isa = PBXGroup;
+			children = (
+				BDD92A0B1C82CDED00D9A49A /* AppDelegate.swift */,
+				BDD92A0D1C82CDED00D9A49A /* ViewController.swift */,
+				BDD92A0F1C82CDED00D9A49A /* Main.storyboard */,
+				BDD92A121C82CDED00D9A49A /* Assets.xcassets */,
+				BDD92A141C82CDED00D9A49A /* LaunchScreen.storyboard */,
+				BDD92A171C82CDED00D9A49A /* Info.plist */,
+			);
+			path = djalarm;
+			sourceTree = "<group>";
+		};
+		BDD92A1F1C82CDED00D9A49A /* djalarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD92A201C82CDED00D9A49A /* djalarmTests.swift */,
+				BDD92A221C82CDED00D9A49A /* Info.plist */,
+			);
+			path = djalarmTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD92A071C82CDED00D9A49A /* djalarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD92A251C82CDED00D9A49A /* Build configuration list for PBXNativeTarget "djalarm" */;
+			buildPhases = (
+				BDD92A041C82CDED00D9A49A /* Sources */,
+				BDD92A051C82CDED00D9A49A /* Frameworks */,
+				BDD92A061C82CDED00D9A49A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = djalarm;
+			productName = djalarm;
+			productReference = BDD92A081C82CDED00D9A49A /* djalarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDD92A1B1C82CDED00D9A49A /* djalarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD92A281C82CDED00D9A49A /* Build configuration list for PBXNativeTarget "djalarmTests" */;
+			buildPhases = (
+				BDD92A181C82CDED00D9A49A /* Sources */,
+				BDD92A191C82CDED00D9A49A /* Frameworks */,
+				BDD92A1A1C82CDED00D9A49A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD92A1E1C82CDED00D9A49A /* PBXTargetDependency */,
+			);
+			name = djalarmTests;
+			productName = djalarmTests;
+			productReference = BDD92A1C1C82CDED00D9A49A /* djalarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD92A001C82CDED00D9A49A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ainame;
+				TargetAttributes = {
+					BDD92A071C82CDED00D9A49A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					BDD92A1B1C82CDED00D9A49A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = BDD92A071C82CDED00D9A49A;
+					};
+				};
+			};
+			buildConfigurationList = BDD92A031C82CDED00D9A49A /* Build configuration list for PBXProject "djalarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDD929FF1C82CDED00D9A49A;
+			productRefGroup = BDD92A091C82CDED00D9A49A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD92A071C82CDED00D9A49A /* djalarm */,
+				BDD92A1B1C82CDED00D9A49A /* djalarmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD92A061C82CDED00D9A49A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD92A161C82CDED00D9A49A /* LaunchScreen.storyboard in Resources */,
+				BDD92A131C82CDED00D9A49A /* Assets.xcassets in Resources */,
+				BDD92A111C82CDED00D9A49A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD92A1A1C82CDED00D9A49A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD92A041C82CDED00D9A49A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD92A0E1C82CDED00D9A49A /* ViewController.swift in Sources */,
+				BDD92A0C1C82CDED00D9A49A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD92A181C82CDED00D9A49A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD92A211C82CDED00D9A49A /* djalarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDD92A1E1C82CDED00D9A49A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD92A071C82CDED00D9A49A /* djalarm */;
+			targetProxy = BDD92A1D1C82CDED00D9A49A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDD92A0F1C82CDED00D9A49A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDD92A101C82CDED00D9A49A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDD92A141C82CDED00D9A49A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDD92A151C82CDED00D9A49A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDD92A231C82CDED00D9A49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDD92A241C82CDED00D9A49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDD92A261C82CDED00D9A49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = djalarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ainam.djalarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDD92A271C82CDED00D9A49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = djalarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ainam.djalarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDD92A291C82CDED00D9A49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = djalarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ainam.djalarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/djalarm.app/djalarm";
+			};
+			name = Debug;
+		};
+		BDD92A2A1C82CDED00D9A49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = djalarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.ainam.djalarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/djalarm.app/djalarm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD92A031C82CDED00D9A49A /* Build configuration list for PBXProject "djalarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD92A231C82CDED00D9A49A /* Debug */,
+				BDD92A241C82CDED00D9A49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD92A251C82CDED00D9A49A /* Build configuration list for PBXNativeTarget "djalarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD92A261C82CDED00D9A49A /* Debug */,
+				BDD92A271C82CDED00D9A49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDD92A281C82CDED00D9A49A /* Build configuration list for PBXNativeTarget "djalarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD92A291C82CDED00D9A49A /* Debug */,
+				BDD92A2A1C82CDED00D9A49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD92A001C82CDED00D9A49A /* Project object */;
+}
