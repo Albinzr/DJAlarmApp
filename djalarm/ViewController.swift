@@ -7,19 +7,42 @@
 //
 
 import UIKit
+import MediaPlayer
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController, MPMediaPickerControllerDelegate {
+    let playerController = MPMusicPlayerController.applicationMusicPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func onTapPickButton(sender: UIButton) {
+        let pickerController = MPMediaPickerController()
+        pickerController.delegate = self
+        pickerController.allowsPickingMultipleItems = true
+        presentViewController(pickerController, animated: true, completion: nil)
     }
-
-
+    
+    @IBAction func onTapPlayButton(sender: UIButton) {
+        playerController.play()
+    }
+    
+    @IBAction func onTapPauseButton(sender: UIButton) {
+        playerController.pause()
+    }
+    
+    @IBAction func onTapStopButton(sender: UIButton) {
+        playerController.stop()
+    }
+    
+    func mediaPicker(mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
+        playerController.setQueueWithItemCollection(mediaItemCollection)
+        playerController.play()
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func mediaPickerDidCancel(mediaPicker: MPMediaPickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
