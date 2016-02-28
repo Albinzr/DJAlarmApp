@@ -28,8 +28,7 @@
                                 <rect key="frame" x="285" y="139" width="30" height="30"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="onTapPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hL-aK-azB"/>
-                                    <action selector="onTapPlayButton:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zL6-hc-S2h"/>
+                                    <action selector="onTapPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghR-ct-Vuo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLw-r4-OZc">
