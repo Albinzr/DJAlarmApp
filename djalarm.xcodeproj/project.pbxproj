@@ -13,6 +13,7 @@
 		BDD92A131C82CDED00D9A49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD92A121C82CDED00D9A49A /* Assets.xcassets */; };
 		BDD92A161C82CDED00D9A49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD92A141C82CDED00D9A49A /* LaunchScreen.storyboard */; };
 		BDD92A211C82CDED00D9A49A /* djalarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A201C82CDED00D9A49A /* djalarmTests.swift */; };
+		BDD92A2C1C82CF5E00D9A49A /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A2B1C82CF5E00D9A49A /* Material.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		BDD92A1C1C82CDED00D9A49A /* djalarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = djalarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD92A201C82CDED00D9A49A /* djalarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = djalarmTests.swift; sourceTree = "<group>"; };
 		BDD92A221C82CDED00D9A49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD92A2B1C82CF5E00D9A49A /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD92A2C1C82CF5E00D9A49A /* Material.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		BDD929FF1C82CDED00D9A49A = {
 			isa = PBXGroup;
 			children = (
+				BDD92A2B1C82CF5E00D9A49A /* Material.framework */,
 				BDD92A0A1C82CDED00D9A49A /* djalarm */,
 				BDD92A1F1C82CDED00D9A49A /* djalarmTests */,
 				BDD92A091C82CDED00D9A49A /* Products */,
@@ -106,6 +110,7 @@
 				BDD92A041C82CDED00D9A49A /* Sources */,
 				BDD92A051C82CDED00D9A49A /* Frameworks */,
 				BDD92A061C82CDED00D9A49A /* Resources */,
+				BDD92A2D1C82CF6500D9A49A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,6 +196,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDD92A2D1C82CF6500D9A49A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Material.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDD92A041C82CDED00D9A49A /* Sources */ = {
@@ -327,6 +349,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = djalarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ainam.djalarm;
@@ -338,6 +364,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = djalarm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ainam.djalarm;
