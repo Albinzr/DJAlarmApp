@@ -15,6 +15,9 @@
 		BDD92A211C82CDED00D9A49A /* djalarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A201C82CDED00D9A49A /* djalarmTests.swift */; };
 		BDD92A2C1C82CF5E00D9A49A /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A2B1C82CF5E00D9A49A /* Material.framework */; };
 		BDD92A2F1C82CF9E00D9A49A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A2E1C82CF9E00D9A49A /* MediaPlayer.framework */; };
+		BDD92A321C82D49400D9A49A /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A311C82D49400D9A49A /* MusicPlayer.swift */; };
+		BDD92A361C82F40600D9A49A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A341C82F40600D9A49A /* RxSwift.framework */; };
+		BDD92A371C82F40600D9A49A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A351C82F40600D9A49A /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		BDD92A221C82CDED00D9A49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD92A2B1C82CF5E00D9A49A /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
 		BDD92A2E1C82CF9E00D9A49A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BDD92A311C82D49400D9A49A /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		BDD92A341C82F40600D9A49A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		BDD92A351C82F40600D9A49A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD92A361C82F40600D9A49A /* RxSwift.framework in Frameworks */,
+				BDD92A371C82F40600D9A49A /* RxCocoa.framework in Frameworks */,
 				BDD92A2F1C82CF9E00D9A49A /* MediaPlayer.framework in Frameworks */,
 				BDD92A2C1C82CF5E00D9A49A /* Material.framework in Frameworks */,
 			);
@@ -65,10 +73,9 @@
 		BDD929FF1C82CDED00D9A49A = {
 			isa = PBXGroup;
 			children = (
-				BDD92A2E1C82CF9E00D9A49A /* MediaPlayer.framework */,
-				BDD92A2B1C82CF5E00D9A49A /* Material.framework */,
 				BDD92A0A1C82CDED00D9A49A /* djalarm */,
 				BDD92A1F1C82CDED00D9A49A /* djalarmTests */,
+				BDD92A331C82F3DE00D9A49A /* Frameworks */,
 				BDD92A091C82CDED00D9A49A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 		BDD92A0A1C82CDED00D9A49A /* djalarm */ = {
 			isa = PBXGroup;
 			children = (
+				BDD92A301C82D48100D9A49A /* Player */,
 				BDD92A0B1C82CDED00D9A49A /* AppDelegate.swift */,
 				BDD92A0D1C82CDED00D9A49A /* ViewController.swift */,
 				BDD92A0F1C82CDED00D9A49A /* Main.storyboard */,
@@ -102,6 +110,25 @@
 				BDD92A221C82CDED00D9A49A /* Info.plist */,
 			);
 			path = djalarmTests;
+			sourceTree = "<group>";
+		};
+		BDD92A301C82D48100D9A49A /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				BDD92A311C82D49400D9A49A /* MusicPlayer.swift */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		BDD92A331C82F3DE00D9A49A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDD92A341C82F40600D9A49A /* RxSwift.framework */,
+				BDD92A351C82F40600D9A49A /* RxCocoa.framework */,
+				BDD92A2E1C82CF9E00D9A49A /* MediaPlayer.framework */,
+				BDD92A2B1C82CF5E00D9A49A /* Material.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +236,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Material.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoaframework",
 			);
 			outputPaths = (
 			);
@@ -225,6 +254,7 @@
 			files = (
 				BDD92A0E1C82CDED00D9A49A /* ViewController.swift in Sources */,
 				BDD92A0C1C82CDED00D9A49A /* AppDelegate.swift in Sources */,
+				BDD92A321C82D49400D9A49A /* MusicPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +452,7 @@
 				BDD92A271C82CDED00D9A49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDD92A281C82CDED00D9A49A /* Build configuration list for PBXNativeTarget "djalarmTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +461,7 @@
 				BDD92A2A1C82CDED00D9A49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
