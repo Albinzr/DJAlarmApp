@@ -18,6 +18,8 @@
 		BDD92A321C82D49400D9A49A /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A311C82D49400D9A49A /* MusicPlayer.swift */; };
 		BDD92A361C82F40600D9A49A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A341C82F40600D9A49A /* RxSwift.framework */; };
 		BDD92A371C82F40600D9A49A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD92A351C82F40600D9A49A /* RxCocoa.framework */; };
+		BDD92A3B1C8368BC00D9A49A /* MusicPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDD92A3A1C8368BC00D9A49A /* MusicPlayerView.xib */; };
+		BDD92A3D1C8369FC00D9A49A /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD92A3C1C8369FC00D9A49A /* MusicPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		BDD92A311C82D49400D9A49A /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		BDD92A341C82F40600D9A49A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		BDD92A351C82F40600D9A49A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		BDD92A3A1C8368BC00D9A49A /* MusicPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayerView.xib; sourceTree = "<group>"; };
+		BDD92A3C1C8369FC00D9A49A /* MusicPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				BDD92A311C82D49400D9A49A /* MusicPlayer.swift */,
+				BDD92A3A1C8368BC00D9A49A /* MusicPlayerView.xib */,
+				BDD92A3C1C8369FC00D9A49A /* MusicPlayerView.swift */,
 			);
 			name = Player;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD92A161C82CDED00D9A49A /* LaunchScreen.storyboard in Resources */,
+				BDD92A3B1C8368BC00D9A49A /* MusicPlayerView.xib in Resources */,
 				BDD92A131C82CDED00D9A49A /* Assets.xcassets in Resources */,
 				BDD92A111C82CDED00D9A49A /* Main.storyboard in Resources */,
 			);
@@ -237,7 +244,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Material.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoaframework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			outputPaths = (
 			);
@@ -253,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD92A0E1C82CDED00D9A49A /* ViewController.swift in Sources */,
+				BDD92A3D1C8369FC00D9A49A /* MusicPlayerView.swift in Sources */,
 				BDD92A0C1C82CDED00D9A49A /* AppDelegate.swift in Sources */,
 				BDD92A321C82D49400D9A49A /* MusicPlayer.swift in Sources */,
 			);
